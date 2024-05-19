@@ -1,0 +1,15 @@
+.about-us {
+  padding: 0 20px;
+
+  &__title {
+    margin-top: 60px;
+  }
+
+  &__content {
+    color: #fff;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+  }
+}

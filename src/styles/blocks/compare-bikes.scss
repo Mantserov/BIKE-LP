@@ -1,0 +1,15 @@
+.compare-bikes {
+  padding-inline: 20px;
+
+  &__title {
+    margin-top: 92px;
+    text-align: center;
+  }
+
+  &__products {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

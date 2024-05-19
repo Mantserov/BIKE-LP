@@ -1,0 +1,38 @@
+.product {
+  &__img {
+    width: 100%;
+
+    &-container {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    &--small {
+      width: 46%;
+    }
+  }
+
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &__description {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__price {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+}

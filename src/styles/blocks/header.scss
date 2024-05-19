@@ -1,0 +1,18 @@
+.header {
+  background-image: url(../../images/header-bg.png);
+  background-position: 85%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    align-self: center;
+    font-size: 36px;
+    letter-spacing: -1.5px;
+    margin-bottom: 88px;
+  }
+}

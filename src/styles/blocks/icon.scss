@@ -1,0 +1,24 @@
+.icon {
+  display: block;
+  background-position: center;
+  background-size: cover;
+
+  &--phone {
+    background-image: url(../../images/icons/icon-phone.png);
+    width: 18px;
+    height: 18px;
+  }
+
+  &--menu {
+    background-image: url(../../images/icons/icon-menu.png);
+    width: 18px;
+    height: 12px;
+  }
+
+  &--close {
+    background-image: url(../../images/icons/icon-close.png);
+    color: #1d1d1d;
+    width: 16px;
+    height: 16px;
+  }
+}

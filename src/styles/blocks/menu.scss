@@ -1,0 +1,37 @@
+.menu {
+  height: 100vh;
+  background-color: #c2c2c2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: all 0.3s;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0);
+  }
+
+  &__phone {
+    display: block;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  &__book-a-ride {
+    display: block;
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 16px;
+    padding: 0 20px;
+  }
+}
