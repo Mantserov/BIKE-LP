@@ -1,8 +1,23 @@
 .compare-bikes {
   padding-inline: 20px;
+  margin-top: 92px;
+
+  @include onTablet {
+    padding-inline: 176px;
+    margin-top: 132px;
+  }
+
+  @include onDesktop {
+    padding-inline: 120px;
+    margin-top: 164px;
+  }
+
+  @include onBigDesktop {
+    padding-inline: 200px;
+    margin-top: 168px;
+  }
 
   &__title {
-    margin-top: 92px;
     text-align: center;
   }
 
@@ -11,5 +26,14 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+
+    @include onTablet {
+      gap: 48px;
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 24px;
+    }
   }
 }

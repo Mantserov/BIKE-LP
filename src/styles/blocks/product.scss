@@ -1,16 +1,40 @@
 .product {
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(102%);
+  }
+
   &__img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-    &-container {
-      width: 100%;
-      display: flex;
-      gap: 20px;
-      justify-content: space-between;
+    @include onDesktop {
+      height: auto;
     }
 
-    &--small {
-      width: 46%;
+    &-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+
+      @include onTablet {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    &--wide {
+      grid-column: span 1;
+
+      @include onTablet {
+        grid-column: span 2;
+      }
+    }
+
+    &--square {
+      grid-column: span 1;
     }
   }
 

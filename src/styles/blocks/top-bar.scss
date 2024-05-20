@@ -3,6 +3,14 @@
   justify-content: space-between;
   padding: 24px 20px;
 
+  @include onTablet {
+    padding: 36px 72px;
+  }
+
+  @include onDesktop {
+    padding: 36px 120px;
+  }
+
   &__logo {
     width: 130px;
     height: 38px;

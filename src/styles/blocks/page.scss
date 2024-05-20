@@ -19,7 +19,8 @@ textarea {
 }
 
 .page {
-  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
   line-height: 100%;
 
   &__body {

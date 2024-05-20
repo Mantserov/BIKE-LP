@@ -1,13 +1,42 @@
 .contacts {
   padding-inline: 20px;
+  margin-top: 80px;
+
+  @include onTablet {
+    padding-inline: 72px;
+    margin-top: 120px;
+  }
+
+  @include onDesktop {
+    padding-inline: 120px;
+    margin-top: 180px;
+  }
+
+  @include onBigDesktop {
+    padding-inline: 200px;
+  }
 
   &__title {
-    margin-top: 80px;
     text-align: center;
   }
 
-  &__form {
+  &__content {
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
     margin-top: 48px;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 24px;
+    }
+
+    @include onDesktop {
+      gap: 198px;
+    }
+  }
+
+  &__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -15,24 +44,66 @@
     & button:last-child {
       margin-top: 16px;
     }
+
+    @include onTablet {
+      width: 50%;
+    }
   }
 
   &__input {
     height: 48px;
+    border: none;
     border-radius: 40px;
+    outline: none;
+    padding-inline: 16px;
 
     &::placeholder {
       color: #7e7e83;
-      padding-inline: 16px;
       font-weight: 400;
       font-size: 14px;
+      transition: color 0.15s;
+    }
+
+    &:hover::placeholder {
+      color: #292929;
     }
   }
 
   &__textarea {
     padding: 14px 16px;
+    border: none;
     border-radius: 16px;
+    outline: none;
     resize: none;
     min-height: 148px;
+
+    &:hover::placeholder {
+      color: #292929;
+    }
+
+    &::placeholder {
+      transition: color 0.15s;
+    }
+  }
+
+  &__info {
+    &-title {
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+
+      &:not(:first-child) {
+        margin-top: 28px;
+      }
+    }
+
+    &-value {
+      display: block;
+      margin-top: 12px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+    }
   }
 }

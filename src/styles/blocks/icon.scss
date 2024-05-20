@@ -2,21 +2,43 @@
   display: block;
   background-position: center;
   background-size: cover;
+  transition: transform 0.15s;
+
+  &:hover {
+    transform: scale(115%);
+  }
 
   &--phone {
-    background-image: url(../../images/icons/icon-phone.png);
+    background-image: url(/src/images/icons/icon-phone.png);
     width: 18px;
     height: 18px;
+
+    &-number {
+      display: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-decoration: none;
+
+      @include onDesktop {
+        display: block;
+      }
+    }
   }
 
   &--menu {
-    background-image: url(../../images/icons/icon-menu.png);
+    background-image: url(/src/images/icons/icon-menu.png);
     width: 18px;
     height: 12px;
+
+    &:hover {
+      background-image: url(/src/images/icons/icon-menu-hover.png);
+    }
   }
 
   &--close {
-    background-image: url(../../images/icons/icon-close.png);
+    background-image: url(/src/images/icons/icon-close.png);
     color: #1d1d1d;
     width: 16px;
     height: 16px;

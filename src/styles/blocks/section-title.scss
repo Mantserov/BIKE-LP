@@ -3,4 +3,12 @@
   font-weight: 500;
   font-size: 32px;
   letter-spacing: -1.5px;
+
+  @include onTablet {
+    font-size: 48px;
+  }
+
+  @include onDesktop {
+    font-weight: 600;
+  }
 }

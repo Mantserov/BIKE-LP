@@ -23,6 +23,15 @@
     font-size: 16px;
     margin-top: 40px;
     padding: 0 20px;
+    text-decoration: none;
+
+    @include onTablet {
+      padding: 0 72px;
+    }
+
+    @include onDesktop {
+      padding: 0 120px;
+    }
   }
 
   &__book-a-ride {
@@ -33,5 +42,13 @@
     letter-spacing: 2px;
     margin-top: 16px;
     padding: 0 20px;
+
+    @include onTablet {
+      padding: 0 72px;
+    }
+
+    @include onDesktop {
+      padding: 0 120px;
+    }
   }
 }

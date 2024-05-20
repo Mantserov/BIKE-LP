@@ -1,15 +1,38 @@
 .about-us {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
+  margin-top: 60px;
+  gap: 32px;
+
+  @include onTablet {
+    flex-direction: row;
+    margin-top: 120px;
+    padding: 0 72px;
+  }
+
+  @include onDesktop {
+    padding: 0 120px;
+  }
+
+  @include onBigDesktop {
+    padding-inline: 200px;
+  }
 
   &__title {
-    margin-top: 60px;
+    @include onTablet {
+      width: 50%;
+    }
   }
 
   &__content {
     color: #fff;
-    margin-top: 32px;
     font-weight: 500;
     font-size: 23px;
     line-height: 140%;
+
+    @include onTablet {
+      width: 50%;
+    }
   }
 }
