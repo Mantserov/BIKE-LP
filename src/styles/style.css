@@ -30,7 +30,7 @@ textarea {
 }
 
 .header {
-  background-image: url(/src/images/header-bg.png);
+  background-image: url(../../src/images/header-bg.png);
   background-position: 85%;
   background-size: cover;
   height: 100vh;
@@ -103,7 +103,7 @@ textarea {
   transform: scale(115%);
 }
 .icon--phone {
-  background-image: url(src/images/icons/icon-phone.png);
+  background-image: url(../../src/images/icons/icon-phone.png);
   width: 18px;
   height: 18px;
 }
@@ -121,15 +121,15 @@ textarea {
   }
 }
 .icon--menu {
-  background-image: url(src/images/icons/icon-menu.png);
+  background-image: url(../../src/images/icons/icon-menu.png);
   width: 18px;
   height: 12px;
 }
 .icon--menu:hover {
-  background-image: url(src/images/icons/icon-menu-hover.png);
+  background-image: url(../../src/images/icons/icon-menu-hover.png);
 }
 .icon--close {
-  background-image: url(src/images/icons/icon-close.png);
+  background-image: url(../../src/images/icons/icon-close.png);
   color: #1d1d1d;
   width: 16px;
   height: 16px;
