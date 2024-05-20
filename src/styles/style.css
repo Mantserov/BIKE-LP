@@ -561,7 +561,7 @@ textarea {
 }
 
 .footer {
-  background-image: url(/src/images/footer.png);
+  background-image: url(../../src/images/footer.png);
   background-position: 80%;
   background-size: cover;
   width: 100%;
